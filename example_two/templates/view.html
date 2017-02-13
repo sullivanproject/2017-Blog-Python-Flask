@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>설리번 예제 블로그</title><!-- 블로그 제목 바꾸기 -->
+    <meta name="og:title" content="BLOG TITLE"><!-- Open Graph : 카톡이나 페북에 공유할때 예쁘게 뜨게 만드려면 이걸 건드려야함. 자세한건 검색 -->
+    <meta name="og:description" content="OOO의 블로그 입니다.">
+    <meta name="og:image" content="/img/og-title.jpg">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css"><!-- 웹폰트 -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>설리번 예제 블로그</h1><!-- 블로그 제목 바꾸기 -->
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/signin">LOGIN</a></li><!-- 로그인 후에 뜨게 만들기 -->
+          <li><a href="/write">WRITE</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+          <li>
+            <form action="" method="POST">
+              <input type="text" name="search" placeholder="검색">
+              <input type="submit" value="">
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article id="content">
+          <time>시간</time>
+          <h1>제목</h1>
+          <div id="tag-wrapper">
+            <span class="tag">태그</span>
+          </div>
+          <p>내용</p>
+        </article>
+        <article id="comment-wrapper">
+          <h5>댓글</h5>
+          <form class="comment-write" action="/comment" method="post">
+            <textarea name="content" placeholder="내용을 입력해주세요." required></textarea>
+            <input type="submit" value="댓글 달기">
+            <input type="hidden" name="id" value="{{id}}">
+          </form>
+          <div class="comment">
+            <p class="writer"><time>작성시간</time> 작성자</p>
+            <p>
+              댓글 내용
+            </p>
+            <a href="/comment/del/{{i[0].id}}">삭제</a>
+          </div>
+        </article>
+      </section>
+      <aside>
+        <article id="profile-wrapper">
+          <div class="profile"></div>
+          <h3>배주웅</h3>
+          <p>
+            이거 <b>자연곱슬</b> 입니다.<br>
+            설리번 프로젝트 설리번 선생님
+          </p>
+        </article>
+        <article>
+          <h5>태그</h5>
+          <div id="tag-wrapper">
+            <span class="tag">태그</span>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2017 - OOO All rights reserved.</p>
+    </footer>
+  </body>
+</html>

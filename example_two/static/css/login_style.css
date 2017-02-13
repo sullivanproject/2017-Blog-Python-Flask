@@ -1,0 +1,291 @@
+/*default setting*/
+h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #e74c3c;
+}
+
+
+/*default layout part*/
+
+header {
+  height: 250px;
+  background-color: black;
+  background-image: url(../img/bg_temp.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header nav {
+  padding: 20px;
+}
+
+header nav h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav input {
+  vertical-align: top;
+  padding: 5px 10px;
+  margin-top: -5px;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+header nav input[type=text] {
+  width: 150px;
+}
+
+header nav input[type=submit] {
+  width: 30px;
+  background: url(../img/ic_search.svg) no-repeat;
+  background-color: black;
+  background-size: 17.5px;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - 430px);
+  margin: 50px 5%;
+}
+
+main section {
+  width: calc(90% - 200px);
+  margin-right: 50px;
+}
+
+main aside {
+  width: 250px;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: #333;
+  font-size: 0.85rem;
+  text-align: center;
+  color: white;
+}
+
+
+/*main page layout part*/
+section article {
+  padding: 50px 0 20px;
+  border-bottom: 1px solid #EEE;
+}
+
+section article:first-child {
+  padding-top: 0;
+}
+
+section article:last-child {
+  border: 0;
+}
+
+section time {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+#list p {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+#tag-wrapper .tag {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 1.5px 3.5px 0;
+  background-color: #EEE;
+  border-radius: 2.5px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+#pager-wrapper .pager {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 2px solid #EEE;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+#pager-wrapper .now {
+  border-color: #333;
+  color: #333;
+}
+
+aside article {
+  margin-bottom: 30px;
+}
+
+aside #profile-wrapper {
+  padding: 20px 15px;
+  box-shadow: 0px 2.5px 10px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+aside #profile-wrapper .profile {
+  width: 40px;
+  height: 40px;
+  margin-left: 180px;
+  margin-bottom: -20px;
+  border-radius: 50%;
+  background-image: url(../img/profile_temp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+aside #profile-wrapper p {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.35;
+}
+
+
+/*content layout part*/
+#content h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+#content p {
+  margin-bottom: 20px;
+}
+
+#comment-wrapper input,
+#comment-wrapper textarea {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #F7F7F7;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#comment-wrapper textarea {
+  height: 75px;
+}
+
+#comment-wrapper input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#comment-wrapper .comment-write {
+  margin-bottom: 40px;
+}
+
+#comment-wrapper .comment {
+  padding: 20px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #EEE;
+}
+
+#comment-wrapper .comment:last-child {
+  border: 0;
+}
+
+#comment-wrapper .comment .writer {
+  font-size: 0.8rem;
+}
+
+#comment-wrapper .comment time {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/*write layout part*/
+#write {
+	width: 100%;
+}
+
+#write input[type=text], #write textarea {
+	display: inline-block;
+	width: calc(100% - 40px);
+  padding: 20px;
+	background: none;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+#write textarea {
+	height: 1000px;
+}
+
+#write input[type=text] {
+	font-size: 3em;
+}
+
+#write input[type=submit] {
+	position: fixed;
+	top: 25px;
+	right: 25px;
+	padding: 10px 25px;
+	background-color: #191d20;
+	color: white;
+}
+
+
+/*login layout part*/
+#login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25%;
+	margin-top: -150px;
+	display: block;
+	width: 50%;
+	text-align: center;
+}
+
+#login input {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+#login input[type=submit] {
+	background-color: #EEE;
+	color: #666;
+}
+
+#login input[type=submit]:hover {
+	background-color: crimson;
+	color: white;
+}
